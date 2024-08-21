@@ -39,7 +39,7 @@ dbconfig
 
     app.use(site_router);
     app.use("/user", user_router);
-   
+    app.use("/signup", user_router);
 
     app.listen(PORT, () => {
       console.log(`Server is running ... http://localhost:${PORT}`);
